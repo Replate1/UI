@@ -1,5 +1,7 @@
 // General Styles
 
+@import url('https://fonts.googleapis.com/css?family=Manjari|Zhi+Mang+Xing&display=swap');
+
 * {
 
     box-sizing: border-box;
@@ -11,6 +13,13 @@
   html {
   
     font-size: 62.5%;
+
+    background: linear-gradient(to bottom, rgba(225,244,243,0.7) 0%,rgba(255,255,255,0.7) 36%,rgba(255,255,255,0.7) 64%,rgba(225,244,243,0.7) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    // background-color: #f5cdaa;
   
   }
   
@@ -18,21 +27,21 @@
   
   html, body {
   
-    font-family: 'Ubuntu', sans-serif;
-  
     color: black;
 
     line-height: 2;
   
   }
   
+
   
   
   h1, h2, h3, h4, h5 {
   
-    font-family: 'Russo One', sans-serif;
+    font-family: @fontMain;
   
-    color: black;
+    color: #333333;
+
   
   }
   
@@ -59,9 +68,32 @@
     font-size: 3rem;
   
     line-height: 1.4;
+
+    font-family: @fontAlt;
+
+    color:#706c61;
   
   }
+
+  nav{
+    font-family:@fontAlt;
+    a{
+      text-decoration: none;
+    }
+  }
+
+
   
+  button{
+    margin: 20px;
+    font-family: @fontAlt;
+    .button(white, black, 2.5rem);
+
+    &:hover{
+      .button(@light,@dark,2.5rem);
+    }
+
+  }
   
   
   .container {

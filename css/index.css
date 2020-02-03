@@ -129,15 +129,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Manjari';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Manjari Regular'), local('Manjari-Regular'), url(https://fonts.gstatic.com/s/manjari/v2/k3kQo8UPMOBO2w1UfdnoKw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Zhi Mang Xing';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Zhi Mang Xing Regular'), local('ZhiMangXing-Regular'), url(https://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g4aAneQ.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
+  background: linear-gradient(to bottom, rgba(225, 244, 243, 0.7) 0%, rgba(255, 255, 255, 0.7) 36%, rgba(255, 255, 255, 0.7) 64%, rgba(225, 244, 243, 0.7) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
   color: black;
   line-height: 2;
 }
@@ -146,8 +164,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: black;
+  font-family: 'Zhi Mang Xing', cursive;
+  color: #333333;
 }
 h2 {
   font-size: 3.2rem;
@@ -158,6 +176,39 @@ h3 {
 p {
   font-size: 3rem;
   line-height: 1.4;
+  font-family: 'Manjari', sans-serif;
+  color: #706c61;
+}
+nav {
+  font-family: 'Manjari', sans-serif;
+}
+nav a {
+  text-decoration: none;
+}
+button {
+  margin: 20px;
+  font-family: 'Manjari', sans-serif;
+  border: 1px double #000000;
+  border-radius: 7px;
+  font-size: 2.5rem;
+  background: white;
+  color: black;
+  width: 150px;
+  height: 45px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+button:hover {
+  font-family: 'Manjari', sans-serif;
+  border: 1px double #000000;
+  border-radius: 7px;
+  font-size: 2.5rem;
+  background: #e1f4f3;
+  color: #333333;
+  width: 150px;
+  height: 45px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .container {
   max-width: 1000px;
@@ -168,20 +219,35 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  background-image: url("/img/city_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #e1f4f3;
+  border-radius: 20px;
 }
 header nav h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  color: #e1f4f3;
+  text-shadow: 4px 4px #000000;
+  margin: 0px 20px;
 }
 header nav a {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #e1f4f3;
+  text-shadow: 4px 4px #000000;
+  margin: 0px 20px;
 }
 header .cta {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  margin: 0px auto;
+  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  border-radius: 50px;
+  background-color: #e1f4f3;
 }
 header .cta h1 {
   font-size: 11rem;
@@ -194,36 +260,88 @@ header .cta .buttons {
   margin: 40px auto;
 }
 .pitch {
-  margin: 40px auto;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  border-radius: 20px;
+  background-color: #e1f4f3;
 }
 .pitch h3 {
   font-size: 5rem;
   margin: 20px auto;
   text-align: center;
+  border-bottom: 2px solid #e1f4f3;
 }
 .info h3 {
   font-size: 5rem;
   text-align: center;
+  border-bottom: 2px solid #e1f4f3;
+  background-color: #e1f4f3;
+  border-radius: 20px;
+  margin: 20px auto;
 }
 .info .container_middle {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .info .container_middle .volenteer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
+  text-align: center;
+  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  border-radius: 10px;
+  background-color: #e1f4f3;
 }
 .info .container_middle .volenteer h4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .info .container_middle .business {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
+  text-align: center;
+  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  border-radius: 10px;
+  background-color: #e1f4f3;
 }
 .info .container_middle .business h4 {
+  font-size: 3.5rem;
+}
+footer .ctafoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  background-image: url("/img/city_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  border: 1px solid #cfb495;
+}
+footer .ctafoot h2 {
+  font-size: 5rem;
+  color: #ffffff;
+  text-shadow: 4px 4px #000000;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
   font-size: 3rem;
+  text-align: center;
+  margin: 40px auto;
+  border-bottom: 1px solid #cfb495;
+}
+footer nav a {
+  color: #333333;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  font-size: 2rem;
+  color: #706c61;
 }
