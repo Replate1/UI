@@ -148,7 +148,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background: linear-gradient(to bottom, rgba(225, 244, 243, 0.7) 0%, rgba(255, 255, 255, 0.7) 36%, rgba(255, 255, 255, 0.7) 64%, rgba(225, 244, 243, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(225, 244, 243, 0.85) 0%, rgba(255, 255, 255, 0.85) 36%, rgba(255, 255, 255, 0.85) 64%, rgba(225, 244, 243, 0.85) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -188,7 +188,7 @@ nav a {
 button {
   margin: 20px;
   font-family: 'Manjari', sans-serif;
-  border: 1px double #000000;
+  border: 2px solid #706c61;
   border-radius: 7px;
   font-size: 2.5rem;
   background: white;
@@ -200,11 +200,11 @@ button {
 }
 button:hover {
   font-family: 'Manjari', sans-serif;
-  border: 1px double #000000;
+  border: 2px solid #706c61;
   border-radius: 7px;
   font-size: 2.5rem;
-  background: #e1f4f3;
-  color: #333333;
+  background: #333333;
+  color: #e1f4f3;
   width: 150px;
   height: 45px;
   margin-top: 10px;
@@ -230,13 +230,13 @@ header nav {
 header nav h2 {
   font-size: 4.5rem;
   color: #e1f4f3;
-  text-shadow: 4px 4px #000000;
+  text-shadow: 2px 2px #333333;
   margin: 0px 20px;
 }
 header nav a {
   font-size: 2.5rem;
   color: #e1f4f3;
-  text-shadow: 4px 4px #000000;
+  text-shadow: 2px 2px #333333;
   margin: 0px 20px;
 }
 header .cta {
@@ -245,13 +245,16 @@ header .cta {
   align-items: center;
   justify-content: center;
   margin: 0px auto;
-  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  box-shadow: 0px 20px 80px 0 #e1f4f3;
   border-radius: 50px;
   background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
 }
 header .cta h1 {
   font-size: 11rem;
   margin-bottom: 20px;
+  border-bottom: 2px solid #706c61;
 }
 header .cta p {
   margin-bottom: 20px;
@@ -262,9 +265,11 @@ header .cta .buttons {
 .pitch {
   margin: 20px auto;
   padding: 20px;
-  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  box-shadow: 20px 20px 80px 0 #e1f4f3;
   border-radius: 20px;
   background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
 }
 .pitch h3 {
   font-size: 5rem;
@@ -279,6 +284,9 @@ header .cta .buttons {
   background-color: #e1f4f3;
   border-radius: 20px;
   margin: 20px auto;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
+  box-shadow: 20px 20px 80px 0 #e1f4f3;
 }
 .info .container_middle {
   display: flex;
@@ -290,12 +298,15 @@ header .cta .buttons {
   align-items: center;
   width: 45%;
   text-align: center;
-  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  box-shadow: 20px 20px 80px 0 #e1f4f3;
   border-radius: 10px;
   background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
 }
 .info .container_middle .volenteer h4 {
   font-size: 3.5rem;
+  border-bottom: 2px solid #706c61;
 }
 .info .container_middle .business {
   display: flex;
@@ -303,12 +314,15 @@ header .cta .buttons {
   align-items: center;
   width: 45%;
   text-align: center;
-  box-shadow: 0 1px 8px 0 #e1f4f3, 0 1px 1px 0 #e1f4f3;
+  box-shadow: 20px 20px 80px 0 #e1f4f3;
   border-radius: 10px;
   background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
 }
 .info .container_middle .business h4 {
   font-size: 3.5rem;
+  border-bottom: 2px solid #706c61;
 }
 footer .ctafoot {
   display: flex;
