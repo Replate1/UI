@@ -72,6 +72,13 @@
     font-family: @fontAlt;
 
     color:#706c61;
+
+    @media @desktop{
+      font-size: 2.5rem;
+    }
+    @media @phone{
+      font-size:2.2rem;
+    }
   
   }
 
@@ -93,16 +100,30 @@
       .button(@dark,@light,2.5rem);
     }
 
+    @media @phone{
+      margin: 5px 20px;
+
+    }
+
   }
   
   
   .container {
   
-    max-width: 1000px;
+    max-width: 80%;
   
     width: 100%;
   
     margin: 20px auto;
+
+      @media @desktop{
+
+      max-width: 1000px;
+    
+      width: 95%;
+    
+      margin: 20px auto;
+      }
     
   
   }

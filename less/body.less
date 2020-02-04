@@ -15,12 +15,30 @@ header{
             color: #e1f4f3;
             text-shadow: 2px 2px  @dark;
             margin: 0px 20px;
+            @media @phone{
+                margin: 0px 10px;
+                font-size:3rem;
+            }
         }
+
         a{
             font-size: 2.5rem;
             color:#e1f4f3;
             text-shadow: 2px 2px  @dark;
             margin: 0px 20px;
+            @media @desktop{
+                font-size:2.2rem;
+                margin:0 10px;
+            }
+            @media @phone{
+                font-size: 2rem;
+                margin:0px 5px;
+            }
+
+            &:hover{
+                color:@dark;
+                text-shadow:2px 2px @light;
+            }
         }
     }
 
@@ -30,20 +48,29 @@ header{
         align-items: center;
         justify-content: center;
         margin: 0px auto;
-        box-shadow: 0px 20px 80px 0 @light;
+        box-shadow: 0px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         background-color: @light;
         border-left: 2px solid @mid;
         border-right: 2px solid @mid;
 
         h1{
-            font-size: 11rem;
+            font-size: 13rem;
             margin-bottom: 20px;
             border-bottom: 2px solid @mid;
+            @media @desktop{
+                font-size: 11rem;
+            }
+            @media @phone{
+                font-size: 9rem;
+            }
             
         }
         p{
             margin-bottom: 20px;
+            @media @phone{
+                margin-bottom:10px;
+            }
         }
         .buttons{
             margin:40px auto;
@@ -54,16 +81,19 @@ header{
 .pitch{
     margin:20px auto;
     padding:20px;
-    box-shadow: 20px 20px 80px 0 @light;
+    box-shadow: 20px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: @light;
     border-left: 2px solid @mid;
     border-right: 2px solid @mid;
     h3{
-        font-size: 5rem;
+        font-size: 6rem;
         margin:20px auto;
         text-align: center;
         border-bottom: 2px solid #e1f4f3;
+        @media @phone{
+            margin:0px auto;
+        }
     }
 
 }
@@ -72,7 +102,7 @@ header{
 
 .info{
     h3{
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: center;
         border-bottom: 2px solid @light;
         background-color: @light;
@@ -80,46 +110,66 @@ header{
         margin:20px auto;
         border-left: 2px solid @mid;
         border-right: 2px solid @mid;
-        box-shadow: 20px 20px 80px 0 @light;
-        
+        box-shadow: 20px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        @media @phone{
+            margin:10px auto;
+        }
 
     }
 
     .container_middle{
 
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        @media @phone{
+            flex-direction:column;
+            align-items: center;
+        }
 
 
     .volenteer{
         display:flex;
         flex-direction: column;
         align-items: center;
-        width:45%;
+        width:35%;
         text-align: center;
-        box-shadow: 20px 20px 80px 0 @light;
+        box-shadow: 20px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         background-color: @light;
         border-left: 2px solid @mid;
         border-right: 2px solid @mid;
+        @media @desktop{
+            width:45%;
+        }
+        @media @phone{
+            width:100%;
+            margin:10px auto;
+        }
         h4{
             font-size: 3.5rem;
             border-bottom: 2px solid @mid;
         }
-
     }
 
     .business{
         display:flex;
         flex-direction: column;
         align-items: center;
-        width:45%;
+        width:35%;
         text-align: center;
-        box-shadow: 20px 20px 80px 0 @light;
+        box-shadow: 20px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         background-color: @light;
         border-left: 2px solid @mid;
         border-right: 2px solid @mid;
+        @media @desktop{
+            width:45%;
+        }
+        @media @phone{
+            width:100%;
+            margin:10px auto;
+        }
+
         h4{
             font-size: 3.5rem;
             border-bottom: 2px solid @mid;
@@ -141,6 +191,9 @@ footer{
         background-size: cover;
         border-radius: 20px;
         border:1px solid #cfb495;
+        @media @phone{
+            margin:10px auto;
+        }
         h2{
             font-size: 5rem;
             color: rgb(255, 255, 255);
@@ -155,8 +208,15 @@ footer{
         text-align: center;
         margin:40px auto;
         border-bottom: 1px solid #cfb495;
+        @media @phone{
+            font-size:2rem;
+        }
         a{
             color:@dark;
+            &:hover{
+                color:@dark;
+                text-shadow:2px 2px @light;
+            }
             
         }
     }
