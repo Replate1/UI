@@ -351,7 +351,7 @@ header .cta {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0px auto;
+  margin: 20px auto;
   box-shadow: 0px 20px 80px 0 #e1f4f3, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   background-color: #e1f4f3;
@@ -360,7 +360,6 @@ header .cta {
 }
 header .cta img {
   height: 150px;
-  margin-bottom: 30px;
 }
 @media (max-width: 500px) {
   header .cta img {
@@ -368,8 +367,8 @@ header .cta img {
   }
 }
 header .cta h1 {
-  font-size: 13rem;
-  margin-bottom: 20px;
+  font-size: 10rem;
+  margin-bottom: 10px;
   border-bottom: 2px solid #706c61;
 }
 @media (max-width: 1000px) {
@@ -429,69 +428,249 @@ header .cta .buttons {
     margin: 10px auto;
   }
 }
-.info .container_middle {
+.info .team {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-@media (max-width: 500px) {
-  .info .container_middle {
+@media (max-width: 750px) {
+  .info .team {
     flex-direction: column;
     align-items: center;
   }
 }
-.info .container_middle .volenteer {
+@media (max-width: 500px) {
+  .info .team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.info .team .personOne {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 40%;
   text-align: center;
   box-shadow: 20px 20px 80px 0 #e1f4f3, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #e1f4f3;
   border-left: 2px solid #706c61;
   border-right: 2px solid #706c61;
+  margin: 20px auto;
+  width: 100%;
 }
 @media (max-width: 1000px) {
-  .info .container_middle .volenteer {
+  .info .team .personOne {
     width: 45%;
   }
 }
+@media (max-width: 750px) {
+  .info .team .personOne {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
-  .info .container_middle .volenteer {
+  .info .team .personOne {
     width: 100%;
     margin: 10px auto;
   }
 }
-.info .container_middle .volenteer h4 {
-  font-size: 3.5rem;
+.info .team .personOne h4 {
+  font-size: 5rem;
   border-bottom: 2px solid #706c61;
 }
-.info .container_middle .business {
+.info .team .personOne p a {
+  color: #333333;
+  text-decoration: underline;
+}
+.info .team .personOne p a:hover {
+  color: #706c61;
+}
+.info .team .personOne .sean img {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.info .team .personTwo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 40%;
   text-align: center;
   box-shadow: 20px 20px 80px 0 #e1f4f3, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #e1f4f3;
   border-left: 2px solid #706c61;
   border-right: 2px solid #706c61;
+  margin: 20px auto;
 }
 @media (max-width: 1000px) {
-  .info .container_middle .business {
+  .info .team .personTwo {
     width: 45%;
   }
 }
+@media (max-width: 750px) {
+  .info .team .personTwo {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
-  .info .container_middle .business {
+  .info .team .personTwo {
     width: 100%;
     margin: 10px auto;
   }
 }
-.info .container_middle .business h4 {
-  font-size: 3.5rem;
+.info .team .personTwo h4 {
+  font-size: 5rem;
   border-bottom: 2px solid #706c61;
+}
+.info .team .personTwo p a {
+  color: #333333;
+  text-decoration: underline;
+}
+.info .team .personTwo p a:hover {
+  color: #706c61;
+}
+.info .team .personTwo .derek img {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.info .team .personThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  box-shadow: 20px 20px 80px 0 #e1f4f3, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
+  margin: 20px auto;
+}
+@media (max-width: 1000px) {
+  .info .team .personThree {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .info .team .personThree {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .info .team .personThree {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+.info .team .personThree h4 {
+  font-size: 5rem;
+  border-bottom: 2px solid #706c61;
+}
+.info .team .personThree p a {
+  color: #333333;
+  text-decoration: underline;
+}
+.info .team .personThree p a:hover {
+  color: #706c61;
+}
+.info .team .personThree .anna img {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.info .team .personFour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  box-shadow: 20px 20px 80px 0 #e1f4f3, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
+  margin: 20px auto;
+}
+@media (max-width: 1000px) {
+  .info .team .personFour {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .info .team .personFour {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .info .team .personFour {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+.info .team .personFour h4 {
+  font-size: 5rem;
+  border-bottom: 2px solid #706c61;
+}
+.info .team .personFour p a {
+  color: #333333;
+  text-decoration: underline;
+}
+.info .team .personFour p a:hover {
+  color: #706c61;
+}
+.info .team .personFour .ryan img {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.info .team .personFive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  box-shadow: 20px 20px 80px 0 #e1f4f3, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #e1f4f3;
+  border-left: 2px solid #706c61;
+  border-right: 2px solid #706c61;
+  margin: 20px auto;
+}
+@media (max-width: 1000px) {
+  .info .team .personFive {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .info .team .personFive {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .info .team .personFive {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+.info .team .personFive h4 {
+  font-size: 5rem;
+  border-bottom: 2px solid #706c61;
+}
+.info .team .personFive p a {
+  color: #333333;
+  text-decoration: underline;
+}
+.info .team .personFive p a:hover {
+  color: #706c61;
+}
+.info .team .personFive .danny img {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 footer .ctafoot {
   display: flex;
@@ -505,13 +684,18 @@ footer .ctafoot {
   border-radius: 20px;
   border: 1px solid #cfb495;
 }
+footer .ctafoot img {
+  height: 120px;
+  background-color: #e1f4f3;
+  border-radius: 20px;
+}
 @media (max-width: 500px) {
   footer .ctafoot {
     margin: 10px auto;
   }
 }
 footer .ctafoot h2 {
-  font-size: 5rem;
+  font-size: 7rem;
   color: #ffffff;
   text-shadow: 4px 4px #000000;
 }

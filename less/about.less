@@ -1,3 +1,13 @@
+@import "variables";
+
+@import "mixins";
+
+@import "reset";
+
+@import "global";
+
+
+
 header{
     nav{
         display:flex;
@@ -10,6 +20,7 @@ header{
         background-size: cover;
         border: 1px solid @light;
         border-radius: 20px;
+
         h2{
             font-size: 4.5rem;
             color: #e1f4f3;
@@ -47,7 +58,7 @@ header{
         flex-direction:column;
         align-items: center;
         justify-content: center;
-        margin: 0px auto;
+        margin: 20px auto;
         box-shadow: 0px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         background-color: @light;
@@ -55,15 +66,14 @@ header{
         border-right: 2px solid @mid;
         img{
             height:150px;
-            margin-bottom: 30px;
             @media @phone{
                 height:90px;
             }
         }
 
         h1{
-            font-size: 13rem;
-            margin-bottom: 20px;
+            font-size: 10rem;
+            margin-bottom: 10px;
             border-bottom: 2px solid @mid;
             @media @desktop{
                 font-size: 11rem;
@@ -124,64 +134,105 @@ header{
 
     }
 
-    .container_middle{
+    .team{
 
         display:flex;
         justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        @media @column{
+            flex-direction: column;
+            align-items: center;
+        }
         @media @phone{
             flex-direction:column;
             align-items: center;
         }
 
 
-    .volenteer{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width:35%;
-        text-align: center;
-        box-shadow: 20px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        background-color: @light;
-        border-left: 2px solid @mid;
-        border-right: 2px solid @mid;
-        @media @desktop{
-            width:45%;
+    .personOne{
+        .person;
+        width:100%;
+        p{
+            a{
+                .gitLink
+            }
         }
-        @media @phone{
-            width:100%;
-            margin:10px auto;
-        }
-        h4{
-            font-size: 3.5rem;
-            border-bottom: 2px solid @mid;
+        .sean{
+            img{
+                height:300px;
+                margin-top:20px;
+                border-radius: 20px;
+            }
         }
     }
 
-    .business{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width:35%;
-        text-align: center;
-        box-shadow: 20px 20px 80px 0 @light, 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        background-color: @light;
-        border-left: 2px solid @mid;
-        border-right: 2px solid @mid;
-        @media @desktop{
-            width:45%;
+    .personTwo{
+        .person;
+        p{
+            a{
+                .gitLink
+            }
         }
-        @media @phone{
-            width:100%;
-            margin:10px auto;
+        .derek{
+            img{
+                height:300px;
+                margin-top:20px;
+                border-radius: 20px;
+            }
         }
+        
+    }
 
-        h4{
-            font-size: 3.5rem;
-            border-bottom: 2px solid @mid;
+    .personThree{
+        .person;
+        p{
+            a{
+                .gitLink
+            }
+        }
+        .anna{
+            img{
+                height:300px;
+                margin-top:20px;
+                border-radius: 20px;
+            }
         }
     }
+
+    .personFour{
+        .person;
+        p{
+            a{
+                .gitLink
+            }
+        }
+        .ryan{
+            img{
+                height:300px;
+                margin-top:20px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .personFive{
+        .person;
+                p{
+            a{
+                .gitLink
+            }
+        }
+        .danny{
+            img{
+                height:300px;
+                margin-top:20px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+
 }
 }
 
@@ -198,11 +249,16 @@ footer{
         background-size: cover;
         border-radius: 20px;
         border:1px solid #cfb495;
+        img{
+            height:120px;
+            background-color: @light;
+            border-radius: 20px;
+        }
         @media @phone{
             margin:10px auto;
         }
         h2{
-            font-size: 5rem;
+            font-size: 7rem;
             color: rgb(255, 255, 255);
             text-shadow: 4px 4px  rgb(0, 0, 0);
         }
