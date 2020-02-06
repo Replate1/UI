@@ -95,9 +95,16 @@
     margin: 20px;
     font-family: @fontAlt;
     .button(white, black, 2.5rem);
+    a{
+      text-decoration: none;
+      color:@dark;
+    }
 
     &:hover{
       .button(@dark,@light,2.5rem);
+      a{
+        color:@light;
+      }
     }
 
     @media @phone{
